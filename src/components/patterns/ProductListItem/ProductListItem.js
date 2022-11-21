@@ -1,17 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./ProductListItem.css";
+import Heading from "../Heading";
+import Card from "../Card";
+import Text from "../Text";
+import Button from "../atoms/Button";
 
 export default function ProductListItem({ name, price, imageUrl, onAddToCart, isSoldOut, isOnSale }) {
   return (
-    <div className="card" style={{ backgroundColor: isOnSale ? "#e8F6FF" : "" }}>
-      <h2>{isOnSale ? `${name} (On Sale)` : name}</h2>
+    <Card highlight={isOnSale}>
+      <Heading>
+        {name} {isOnSale && "(On Sale)"}
+      </Heading>
       <img src={imageUrl} alt="" />
-      <small>{price}</small>
-      <button onClick={onAddToCart} disabled={isSoldOut}>
+      <Text>{price}</Text>
+      <Button onClick={onAddToCart} disabled={isSoldOut}>
         {isSoldOut ? "Sold out" : "Add to Cart"}
-      </button>
-    </div>
+      </Button>
+    </Card>
   );
 }
 
