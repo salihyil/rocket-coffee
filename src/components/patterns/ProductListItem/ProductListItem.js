@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./ProductListItem.css";
-import Heading from "../Heading";
-import Card from "../Card";
-import Text from "../Text";
-import Button from "../atoms/Button";
+import Heading from "../../atoms/Heading";
+import Card from "../../atoms/Card";
+import Text from "../../atoms/Text";
+import Button from "../../atoms/Button";
 
 export default function ProductListItem({ name, price, imageUrl, onAddToCart, isSoldOut, isOnSale }) {
   return (
