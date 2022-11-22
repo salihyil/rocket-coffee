@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react'
+import Card from './components/atoms/Card'
 
 function App() {
-  return <div>App</div>;
+  return (
+    <Card>
+      <h3>This is a card heading</h3>
+      <p>This is the text description</p>
+    </Card>
+  )
 }
 
-export default App;
+export default App
