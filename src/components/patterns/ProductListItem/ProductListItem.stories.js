@@ -1,5 +1,5 @@
-import React from "react";
-import ProductListItem from "./ProductListItem";
+import React from 'react'
+import ProductListItem from './ProductListItem'
 //import { action } from "@storybook/addon-actions";
 //import { storiesOf } from "@storybook/react";
 
@@ -17,29 +17,29 @@ export const standard = () => (
   />
 ); */
 
-export default { title: "ProductListItem", component: ProductListItem };
-const Template = (args) => <ProductListItem {...args} />;
+export default { title: 'ProductListItem', component: ProductListItem }
+const Template = args => <ProductListItem {...args} />
 
-export const Standard = Template.bind({});
+export const Standard = Template.bind({})
 Standard.args = {
-  name: "Standard Coffee",
-  price: "2.2",
-  imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
-};
+  name: 'Standard Coffee',
+  price: '2.2',
+  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
+}
 
-export const SoldOut = Template.bind({});
+export const SoldOut = Template.bind({})
 SoldOut.args = {
-  name: "Standard Coffee",
-  price: "2.2",
-  imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
-  isSoldOut: true,
-};
+  name: 'Standard Coffee',
+  price: '2.2',
+  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
+  isSoldOut: true
+}
 
-export const onSale = Template.bind({});
+export const onSale = Template.bind({})
 onSale.args = {
-  name: "Standard Coffee",
-  price: "2.2",
-  imageUrl: "https://source.unsplash.com/tNALoIZhqVM/200x100/",
+  name: 'Standard Coffee',
+  price: '2.2',
+  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
   isSoldOut: false,
-  isOnSale: true,
-};
+  isOnSale: true
+}
