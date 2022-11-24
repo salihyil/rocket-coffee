@@ -23,23 +23,20 @@ const Template = args => <ProductListItem {...args} />
 export const Standard = Template.bind({})
 Standard.args = {
   name: 'Standard Coffee',
-  price: '2.2',
+  price: 2.25,
   imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
 }
 
 export const SoldOut = Template.bind({})
 SoldOut.args = {
   name: 'Standard Coffee',
-  price: '2.2',
-  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
-  isSoldOut: true
+  price: 2.2,
+  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
 }
 
-export const onSale = Template.bind({})
-onSale.args = {
+export const OnSale = Template.bind({})
+OnSale.args = {
   name: 'Standard Coffee',
-  price: '2.2',
-  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/',
-  isSoldOut: false,
-  isOnSale: true
+  price: 2.2,
+  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
 }
