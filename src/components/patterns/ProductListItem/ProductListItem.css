@@ -12,9 +12,13 @@
   border-radius: 4px;
 }
 .card small::before {
-  content: "$";
+  content: '$';
 }
 
 .sale {
   background-color: #e8f6ff;
+}
+
+.passive {
+  background-color: gray !important;
 }

@@ -1,13 +1,13 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react'
+import PropTypes from 'prop-types'
 
-function Button({ onClick, children }) {
-  return <button onClick={onClick}>{children}</button>;
+function Button({ children, ...props }) {
+  return <button {...props}>{children}</button>
 }
 
 Button.propTypes = {
   children: PropTypes.node,
-  onClick: PropTypes.func,
-};
+  onClick: PropTypes.func
+}
 
-export default Button;
+export default Button
