@@ -70,6 +70,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jest": "^29.3.1",
+    "miragejs": "^0.1.46",
     "prettier": "2.7.1",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
