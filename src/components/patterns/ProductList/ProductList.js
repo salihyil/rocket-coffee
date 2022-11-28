@@ -21,7 +21,7 @@ const ProductList = ({ status, ...otherProps }) => {
   }
 
   return (
-    <div>
+    <div className="flex">
       {data.map(i => {
         return (
           <ProductListItem
