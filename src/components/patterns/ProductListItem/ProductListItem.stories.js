@@ -24,19 +24,19 @@ export const Standard = Template.bind({})
 Standard.args = {
   name: 'Standard Coffee',
   price: 2.25,
-  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
+  imageUrl: 'https://images.unsplash.com/photo-1596078841242-12f73dc697c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80'
 }
 
 export const SoldOut = Template.bind({})
 SoldOut.args = {
   name: 'Standard Coffee',
   price: 2.2,
-  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
+  imageUrl: 'https://images.unsplash.com/photo-1596078841242-12f73dc697c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80'
 }
 
 export const OnSale = Template.bind({})
 OnSale.args = {
   name: 'Standard Coffee',
   price: 2.2,
-  imageUrl: 'https://source.unsplash.com/tNALoIZhqVM/200x100/'
+  imageUrl: 'https://images.unsplash.com/photo-1596078841242-12f73dc697c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80'
 }

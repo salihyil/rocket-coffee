@@ -1,13 +1,11 @@
 import React from 'react'
-import Card from './components/atoms/Card'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './router'
+
+import './Mock.server'
 
 function App() {
-  return (
-    <Card>
-      <h3>This is a card heading</h3>
-      <p>This is the text description</p>
-    </Card>
-  )
+  return <RouterProvider router={router} />
 }
 
 export default App
