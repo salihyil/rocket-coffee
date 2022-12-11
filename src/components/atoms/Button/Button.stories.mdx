@@ -1,0 +1,38 @@
+<!-- Button .stories.mdx -->
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import Button from "./Button";
+
+<Meta title="MDX/Button" component={Button} />
+
+export const Template = (args) => <Button {...args}>{'This is a button'}</Button>
+
+# Button
+This is the **Button** component. The intent of the **Button** is ...
+
+<Button onClick={console.log}>Click here</Button>
+
+_This is a button outside of the Storybook Canvas_
+
+## More documentation
+
+<Canvas>
+  <Story name="standart">
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+Other markdown like [Links](http://www.google.com) work also!
+
+
+
+
+
+
+
+
+
+
+
+ 
